@@ -1,11 +1,9 @@
 import React from "react";
 import {
   LineChart,
-  Area,
   Line,
   XAxis,
   YAxis,
-  AreaChart,
   Tooltip,
   Legend
 } from "recharts";
@@ -17,12 +15,7 @@ import {
 export default function ChartItem({data,id,metrics}) {
   const curr_metric = metrics.filter(e => e.id === id)
   console.log(data.data,id,metrics,curr_metric)
-  const chartData = data.data.map((item) => {
-    return {
-      ...item,
-      timestamp: new Date(item.timestamp).toLocaleDateString()
-    };
-  });
+  
 
   const filteredData = data.data.map((item) => {
     if (item.line_status > 0) {
