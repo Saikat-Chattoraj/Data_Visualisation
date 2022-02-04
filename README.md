@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Run this locally
+
+1. Clone this repo in your local system
+2. #### `npm init` on root folder,frontend folder and backend folder
+3. #### `npm init -y` on backend folder
+4. #### `npm install express cors mongoose dotenv` on backend folder
+5. Connect to Mongo atlas and update the uri in the .env folder in root and backend folder.
+6. To provide easy access, the .env folder content is shared here. Please keep this confidential. 
+7. Run #### `npm run start` on both frontend and backend folder.
+8. Wait for some time, click on the available options , the different plots will be displayed.
+9. Note it takes time to fetch the data from database.
+
 ## Available Scripts
 
 In the project directory, you can run:
